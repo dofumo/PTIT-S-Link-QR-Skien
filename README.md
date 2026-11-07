@@ -2,7 +2,7 @@
 
 > Phân tích cấu trúc client-side của app PTIT S-Link, tập trung vào luồng quét mã QR điểm danh sự kiện và cơ chế xác thực (SSO/OAuth2).
 >
-> Mình dịch ngược `index.android.bundle` trích xuất từ `base.apk` sang javascript rồi tổng hợp lại. Chỉ sử dụng cho mục đích học tập và nghiên cứu, không chứa logic gen mã điểm danh hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
+> Mình dịch ngược `index.android.bundle` trích xuất từ `base.apk` sang javascript rồi tổng hợp lại.
 
 ---
 
@@ -158,11 +158,6 @@ API trả 401 / TokenInvalid
 POST /slink/sv-su-kien/qr  { ma, loaiQR }
 ```
 
-## Ghi chú
-
-Tài liệu không bao gồm:
-- Cách server sinh `maDiemDanh` hay chu kỳ/thuật toán sinh mã QR.
-- Bất kỳ hướng dẫn nào để gửi request điểm danh giả mạo hoặc dò/đoán mã điểm danh của người khác.
 
 ---
 
